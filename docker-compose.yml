@@ -1,0 +1,5 @@
+services:
+  dev:
+    image: luarocks-alpine3.17
+    volumes:
+      - ./:/app
