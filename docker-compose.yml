@@ -1,5 +1,8 @@
 services:
   dev:
-    image: luarocks-alpine3.17
+    build: .
     volumes:
       - ./:/app
+    command: ["lua", "/app/main.lua"]
+    ports:
+      - 8080:8080
